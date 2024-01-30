@@ -1,0 +1,41 @@
+[package]
+name = "game-service"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "*"
+actix-threadpool = "*"
+actix-rt = "*"
+actix-http = "*"
+serde = { version = "*", features = ["derive"] }
+diesel = { version = "*", features = ["postgres", "r2d2", "chrono", "serde_json", "numeric"] }
+diesel-async = { version = "*", features = ["postgres", "bb8"] }
+diesel_migrations = "*"
+diesel_cli_ext = "*"
+bb8 = "*"
+r2d2 = "*"
+async-trait = "*"
+dotenv = "*"
+envy = "*"
+env_logger = "*"
+log = "*"
+serde_json = "*"
+futures-util = "*"
+failure = "*"
+tokio = { version = "*", features = ["full"] }
+thiserror = "*"
+derive_more = "*"
+reqwest = { version = "*", features = ["json"] }
+tracing = "*"
+tracing-subscriber = { version = "*", features = ["env-filter"] }
+scylla = "*"
+redis = "*"
+futures = "*"
+uuid = "*"
+bigdecimal = "*"
+num-bigint = "*"
+testcontainers = "*"
+chrono = "*"
